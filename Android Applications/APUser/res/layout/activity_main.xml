@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.addapstrengths.MainActivity"
+    tools:ignore="MergeRootFrame" >
+    
+    <TextView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="25sp"
+         android:id="@+id/top"
+         android:layout_alignParentTop="true"
+         android:text="Current Direction:"/>
+
+    <ImageView 
+        android:src="@drawable/developermap"
+        android:scaleType="fitXY"
+        android:layout_below="@id/top"
+        android:layout_above="@+id/button"
+        android:id="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <ImageView 
+        android:src="@drawable/circle"
+        android:id="@+id/arrow"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:text="Start Scan"
+        android:id="@id/button"/>
+    </RelativeLayout>
+

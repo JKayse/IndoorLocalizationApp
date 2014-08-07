@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APUser</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="rooms">
+		<item>1818</item>
+		<item>1819</item>
+		<item>1820</item>
+		<item>1821</item>
+		<item>1822</item>
+		<item>1823</item>
+	</string-array>
+
+</resources>

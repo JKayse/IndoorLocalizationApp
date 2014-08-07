@@ -1,8 +1,10 @@
+package com.example.apuser;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.Stack;
+
 
 public class Resources
 {
@@ -29,12 +31,12 @@ public class Resources
 	public static List<Room> GetRooms() throws Exception
 	{
 		return Arrays.asList(
-			new Room("1818", 265.0, 490.0),
-			new Room("1819", 430.0, 490.0),
-			new Room("1820", 350.0, 490.0),
-			new Room("1821", 340.0, 490.0),
-			new Room("1822", 435.0, 490.0),
-			new Room("1823", 295.0, 490.0)
+			new Room("1818", 495.0, 916.0),
+			new Room("1819", 495.0, 876.0),
+			new Room("1820", 495.0, 827.0),
+			new Room("1821", 495.0, 816.0),
+			new Room("1822", 495.0, 743.0),
+			new Room("1823", 495.0, 748.0)
 		);
 	}
 

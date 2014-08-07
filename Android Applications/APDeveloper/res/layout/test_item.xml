@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Container for a category in the expandable list. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MergeRootFrame"
+    android:layout_marginBottom="5dp">
+    
+    
+	<!-- Holds the category name. -->	
+	<TextView
+	    android:id="@+id/testName"
+	    android:layout_width="0dp"
+	    android:layout_weight=".75"
+	    android:layout_height="wrap_content"
+	    android:text="test name"
+	    android:ellipsize="end"
+		android:singleLine="true"
+	    android:paddingTop="10dp"
+	    android:textSize="25sp"
+	    android:paddingLeft="30dp" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.APUser.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+	<TextView 
+	    android:id="@+id/getDestinationTitle"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Select Your Destination:"
+	    android:textSize="25sp"
+	    android:paddingLeft="10dp"
+	    android:paddingTop="10dp" />
+
+
+	<Spinner
+	      android:id="@+id/destinations"
+	      android:layout_width="match_parent"
+	      android:layout_below="@id/getDestinationTitle"
+	      android:layout_height="wrap_content"
+		  android:layout_marginRight="10dp"
+		  android:layout_marginLeft="10dp"
+		  android:entries="@array/rooms" />
+	 <LinearLayout 
+	     android:orientation="horizontal"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:id="@+id/buttonContainer"
+	     android:layout_below="@id/destinations"
+	     android:paddingTop="10dp"
+	     android:paddingBottom="10dp">
+	     <Button
+	       android:id="@+id/startScan"
+	       android:layout_width="0dp"
+	       android:layout_weight=".5"
+	       android:layout_height="40dp"
+	       android:layout_marginRight="10dp"
+		   android:layout_marginLeft="10dp"
+	       android:text="Start Scan" 
+	       android:gravity="center"/>
+	     <Button
+	       android:id="@+id/cancelScan"
+	       android:layout_width="0dp"
+	       android:layout_weight=".5"
+	       android:layout_height="40dp"
+	       android:layout_marginRight="10dp"
+		   android:layout_marginLeft="10dp" 
+	       android:text="Cancel Scan" 
+	       android:gravity="center"/>
+	 </LinearLayout>
+
+    
+</RelativeLayout>

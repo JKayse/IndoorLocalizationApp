@@ -1,3 +1,4 @@
+package com.example.apuser;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -5,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Stack;
+
+import android.util.Log;
 
 
 public class MainPath
@@ -15,12 +18,13 @@ public class MainPath
 	{
 		Verticies = new HashMap<Point, ArrayList<Vector>>();
 		Lines = new ArrayList<Line>();
-		Lines.add(new Line(520, 530, 630, 530, "1.1"));
-		Lines.add(new Line(630, 530, 770, 530, "1.2"));
-		Lines.add(new Line(630, 530, 630, 405, "2"));
-		Lines.add(new Line(630, 405, 475, 405, "3"));
-		Lines.add(new Line(475, 405, 475, 490, "4"));
-		Lines.add(new Line(475, 490, 240, 490, "5"));
+		Lines.add(new Line(530, 400, 530, 545, "1.1"));
+		Lines.add(new Line(530, 545, 530, 675, "1.2"));
+		Lines.add(new Line(530, 545, 405, 545, "2"));
+		Lines.add(new Line(405, 545, 405, 705, "3"));
+		Lines.add(new Line(405, 705, 495, 705, "4"));
+		Lines.add(new Line(495, 705, 495, 935, "5"));
+		Lines.add(new Line(495, 935, 435, 935, "6"));
 		for(Line line : Lines)
 		{
 			if(!Verticies.containsKey(line.StartPoint))
